@@ -1,0 +1,397 @@
+:root {
+  --body-bg-color: #22212C;
+  --text-color: #837E9F;
+  --bg-cards: #302F3D;
+  --bg-techs: #CB92B1;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Merriweather Sans', sans-serif;
+    
+}
+
+html, body{
+    background: #22212C;
+}
+
+a{
+    text-decoration: none;
+    color: #837E9F;
+}
+
+main{
+    width: 1440px;
+    
+    margin: 40px auto 20px;
+    display: flex;
+    gap: 60px;
+}
+
+.aside{
+    width: 348px;
+    height: 100%;
+    margin-left: 40px;
+    display: flex;
+    flex-direction: column;    
+    gap: 30px;
+}
+
+
+
+.avatar{
+
+    width: 348px;
+    height: 292px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: #302F3D;
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 20px;
+    gap:10px;
+}
+
+.avatar >img{
+    width: 128px;
+    height: 128px;
+    margin-bottom: 20px;    
+
+    border: 2px solid #00FF00;
+    border-radius: 50%;
+}
+
+.avatar h3{
+    background-color: inherit;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 23px;
+    line-height: 29px;
+    color: var(--text-color);
+}
+
+.avatar p{
+    text-align: center;
+    background-color: inherit;
+    font-family: Merriweather Sans;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 13px;
+    line-height: 16px;
+    color: var(--text-color);
+}
+
+.links{
+    width: 348px;
+    height: 348px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    background: #302F3D;
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 20px;
+}
+
+
+.links p, .links img{
+    background: #302F3D;
+}
+
+.singlelink{
+    display: flex;
+    gap: 20px;
+    margin-top: 20px;
+    background-color: inherit;
+    margin-left: 40px;
+    align-items: center;
+    
+}
+
+/*+++++++++++++++++++++++++++++ inicio cards+++++++++++++++++++++++++++++++++++++++++++++ */
+.cards{
+    width: 348px;
+    
+    display: flex;
+    flex-direction: column;
+    
+    
+    background: var(--bg-cards);
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 20px;
+    
+}
+
+.cards h3.titulo3{
+    font-family: Merriweather Sans;
+    font-style: normal;
+    background-color: inherit;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 25px;
+    color: var(--text-color);
+    display: block;
+    margin: 30px auto 20px 20px;
+}
+
+
+/*================================== fim cards================================ */
+
+
+
+
+/*+++++++++++++++++++++++++++++ inicio Tecnologias+++++++++++++++++++++++++++++++++ */
+
+.containerTecno{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+    background-color: inherit;
+    margin-bottom: 30px     ;
+}
+
+.tecno{
+    width: 86px;
+    height: 24px;
+    background: var(--bg-techs);
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: Merriweather Sans;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 10px;
+    line-height: 13px;
+    text-align: center;
+    text-transform: uppercase;
+
+color: #000000;
+}
+
+
+/*======================================== fim Tecnologias==================================== */
+
+/*+++++++++++++++++++++++++++++ inicio experiencias ++++++++++++++++++++++++++++++++++++++++*/
+.containerXp{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 15px;
+    background-color: inherit;
+    margin-left: 40px;
+    margin-bottom: 30px;
+}
+ 
+.containerXp{
+    list-style:none;
+    
+}
+.containerXp li{
+    background-color: inherit;
+    display: flex;
+    
+    gap: 10px;
+}
+
+.containerXp li .bullet{
+    background-color: var(--text-color);
+    width: 5px;
+    height: 5px;
+    border-radius: 3px;
+    margin-top: 5px;    
+}
+
+.containerXp li .containerli{
+    background-color: inherit;
+}
+
+.containerXp li p{
+    background-color: inherit;
+}
+.containerXp li .place{
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 18px;
+
+    color: var(--text-color);
+}
+
+.containerXp li .time{
+    font-style: normal;
+    font-weight: 300;
+    font-size: 12px;
+    line-height: 15px;
+
+    color:var(--text-color);
+}
+
+.containerXp li .function{
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 15px;
+    color:var(--text-color);
+}
+/*=================================== fim experiencias=========================================*/
+
+
+.container{
+    width: 952px;
+    height: 100%;
+    background-color: inherit;
+    margin-right: 40px;
+    color: var(--text-color);
+}
+
+
+.titleMain{
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 25px;
+    color: var(--text-color);
+    padding: 30px 0 30px 30px;
+    width: 100%;
+    background: #302F3D;
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 20px;
+    margin-bottom: 30px;
+}
+
+.myProjectsContainer{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 30px 0;
+}
+
+.myProjectsSingle{
+    background-color: var(--bg-cards);
+    width: 461px;
+    height: 186px;
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 20px;
+    padding: 30px 10px 30px 30px;
+    margin-bottom: 30px;
+}
+
+.repoDescription{
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 20px;
+}
+
+.repoTitle{
+    display: flex;
+    gap: 16px;
+    margin-bottom: 20px;
+}
+
+.reactionContainer{
+    display: flex;
+    justify-content: space-between;
+    margin-right:15px ;
+    margin-top: 20px;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 18px;
+}
+
+.repoReactions{
+    display: flex;
+    gap: 16px;
+}
+
+.stars, .branch{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.stack{
+    display: flex;
+    gap: 8px;
+    align-items: center;
+}
+
+.colorStack{
+    width: 15px;
+    height: 15px;
+    background: #E7DE79;
+    border: 2px solid #837E9F;
+    box-sizing: border-box;
+    border-radius: 50%;
+}
+
+
+
+.recentPostsSingle{
+    width: 952px;
+    height: 201px;
+    left: 448px;
+    top: 489px;
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 20px;
+    background: var(--bg-cards);
+    display: flex;
+    gap: 20px;
+    padding: 30px 30px 40px;
+}
+
+.recentPostsSingle img{
+    width: 128px;
+    height: 128px;
+    border-radius: 50%;
+}
+
+.postTitle{
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 23px;
+    margin-bottom: 5px;
+}
+
+.timeStamp{
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 18px;
+    margin-bottom: 28px;
+}
+
+.postContent{
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 20px;
+    margin-bottom: 10px;
+}
+
+.postTags{
+    display: flex;
+    gap: 10px;
+}
+
+.tag{
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 18px;
+}
+
+footer{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+    color: var(--text-color);
+}
